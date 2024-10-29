@@ -1,6 +1,10 @@
+@use 'Base/variables' as v;
+@use 'Base/colores' as c;
+//hola
 body{
-  font-family: "Roboto Flex", sans-serif;
+  font-family: v.$fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #752F97;
+  background-color: #000000;
+  color: c.$blanco;
 }
