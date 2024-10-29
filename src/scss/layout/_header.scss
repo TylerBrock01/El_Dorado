@@ -1,0 +1,9 @@
+
+@use '../base/variables' as v;
+@use '../base/colores' as c;
+.nav-bar{
+  background-color: blueviolet;
+}
+a{
+  color: c.$blanco;
+}
