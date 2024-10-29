@@ -1,9 +1,23 @@
 
 @use '../base/variables' as v;
 @use '../base/colores' as c;
+.titulo{
+  color: c.$rojo;
+  text-transform: uppercase;
+  //padding: 1rem 0;
+  background-color: c.$amarillo;
+}
+.header h1{
+  margin: 0;
+}
 .nav-bar{
-  background-color: blueviolet;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: c.$grisverde;
 }
 a{
+  text-transform: capitalize;
+  padding: 1rem;
+  background-color: c.$azulverde;
   color: c.$blanco;
 }
