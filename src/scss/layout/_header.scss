@@ -1,6 +1,7 @@
 
 @use '../base/variables' as v;
 @use '../base/colores' as c;
+@use "../base/mixins" as m;
 .titulo{
   color: c.$rojo;
   text-transform: uppercase;
@@ -9,11 +10,19 @@
 }
 .header h1{
   margin: 0;
+  @include m.telefono{
+    background-color: c.$gris;
+  }
 }
 .nav-bar{
-  display: flex;
-  justify-content: space-evenly;
   background-color: c.$grisverde;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include m.telefono{
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 a{
   text-transform: uppercase;
