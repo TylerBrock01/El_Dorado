@@ -4,8 +4,5 @@
   }@media (max-width: 768px){
     @content;
   }
-}@mixin telefono{
-  @media (min-width: 768px){
-    @content;
-  }
 }
+
