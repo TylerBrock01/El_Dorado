@@ -17,6 +17,7 @@ body {
   font-style: normal;
   color: c.$blanco;
   font-size: 1.5rem;
+  line-height: 1.5;
   background-color: black;
   &.overflow-hidden{
     overflow: hidden;
@@ -28,7 +29,6 @@ p {
   font-size: 1.8rem;
 }
 .contenedor {
-  width: 95%;
   max-width: 120rem;
   margin: 0 auto;
 }
