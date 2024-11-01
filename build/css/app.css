@@ -88,6 +88,12 @@ body > section {
   gap: 1rem;
   padding: 1rem;
 }
+@media (min-width: 768px) {
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 
 a {
   text-transform: uppercase;
