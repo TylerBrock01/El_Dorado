@@ -16,7 +16,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: c.$blanco;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: black;
   &.overflow-hidden{
     overflow: hidden;
@@ -25,6 +25,7 @@ body {
 p {
   //color: v.$negro;
   line-height: 1.5;
+  font-size: 1.8rem;
 }
 .contenedor {
   width: 95%;

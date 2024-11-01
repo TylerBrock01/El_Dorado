@@ -18,11 +18,12 @@
   background-color: c.$grisverde;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  @include m.telefono{
-    display: flex;
-    justify-content: space-evenly;
-  }
+  gap: 1rem;
+  padding: 1rem;
+  //@include m.telefono{
+  //  display: flex;
+  //  justify-content: space-evenly;
+  //}
 }
 a{
   text-transform: uppercase;

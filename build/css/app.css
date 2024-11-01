@@ -15,7 +15,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: black;
 }
 body.overflow-hidden {
@@ -24,6 +24,7 @@ body.overflow-hidden {
 
 p {
   line-height: 1.5;
+  font-size: 1.8rem;
 }
 
 .contenedor {
@@ -84,12 +85,8 @@ body > section {
   background-color: rgb(105, 127, 121);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-@media (min-width: 768px) {
-  .nav-bar {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  gap: 1rem;
+  padding: 1rem;
 }
 
 a {
