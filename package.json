@@ -1,0 +1,31 @@
+{
+  "name": "el-dorado",
+  "version": "1.0.0",
+  "description": "Tacos fish",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TylerBrock01/El_Dorado.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "@NGNR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerBrock01/El_Dorado/issues"
+  },
+  "homepage": "https://github.com/TylerBrock01/El_Dorado#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.80.4"
+  }
+}
