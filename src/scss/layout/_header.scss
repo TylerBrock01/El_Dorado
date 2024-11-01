@@ -2,17 +2,17 @@
 @use '../base/variables' as v;
 @use '../base/colores' as c;
 @use "../base/mixins" as m;
-.titulo{
-  color: c.$rojo;
-  text-transform: uppercase;
-  //padding: 1rem 0;
-  background-color: c.$amarillo;
-}
 .header h1{
   margin: 0;
   @include m.telefono{
     background-color: c.$gris;
   }
+}
+.titulo{
+  color: c.$rojo;
+  text-transform: uppercase;
+  //padding: 1rem 0;
+  background-color: c.$amarillo;
 }
 .nav-bar{
   background-color: c.$grisverde;
@@ -20,8 +20,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
+
 }
-a{
+.opcion-nav{
+  font-size: 2.5rem;
   text-transform: uppercase;
   padding: 1rem;
   background-color: c.$azulverde;
