@@ -412,3 +412,9 @@ template {
   background-color: rgb(14, 49, 67);
   color: #ffffff;
 }
+
+.fondo-imagen {
+  position: relative;
+  min-height: 40rem;
+  display: block;
+}
