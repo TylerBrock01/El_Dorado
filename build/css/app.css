@@ -379,11 +379,6 @@ template {
 .header h1 {
   margin: 0;
 }
-@media (min-width: 768px) {
-  .header h1 {
-    background-color: rgb(232, 224, 223);
-  }
-}
 @media (max-width: 768px) {
   .header h1 {
     background-color: rgb(232, 224, 223);
@@ -398,7 +393,6 @@ template {
 }
 
 .nav-bar {
-  background-color: rgb(105, 127, 121);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -416,5 +410,4 @@ template {
 .fondo-imagen {
   position: relative;
   min-height: 40rem;
-  display: block;
 }
