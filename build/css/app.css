@@ -416,17 +416,8 @@ template {
 
 .opcion-nav {
   border-radius: 3rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: rgb(14, 49, 67);
   color: #ffffff;
   padding: 1rem;
-}
-
-.imagen-background {
-  background-image: url("img/sea.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 1280px;
 }
