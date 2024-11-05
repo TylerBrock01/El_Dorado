@@ -1,4 +1,9 @@
-.fondo-imagen{
-  position: relative;
-  min-height: 40rem;
+@use "../base/colores" as c;
+.imagen-background{
+  background-image: url('img/sea.jpg');
+  background-size: cover; // Expande la imagen para cubrir el div
+  background-position: center; // Centra la imagen en el div
+  background-repeat: no-repeat; // Evita que la imagen se repita
+  height: 100%;
+  width: 1280px
 }

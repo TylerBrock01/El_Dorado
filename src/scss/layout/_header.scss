@@ -2,29 +2,38 @@
 @use '../base/variables' as v;
 @use '../base/colores' as c;
 @use "../base/mixins" as m;
-.header h1{
-  margin: 0;
-  @include m.telefono{
-    background-color: c.$gris;
-  }
+.header{
 }
 .titulo{
-  font-size: 6rem;
+  margin: 0;
+  background-color: c.$amarillo;
   color: c.$rojo;
   text-transform: uppercase;
-  background-color: c.$amarillo;
+  @include m.tablet{
+    background-color: c.$azul;
+  }
 }
+.menu-opcion{
+}
+.menu-nav{
+  //position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .nav-bar{
+  position: absolute;
+  background-color: linear-gradient(270deg, rgba(c.$gris, 0.3), rgba(c.$blanco, 0.3));
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
-
 }
 .opcion-nav{
-  font-size: 2rem;
+  border-radius: 3rem;
   text-transform: uppercase;
-  padding: 1rem;
   background-color: c.$azulverde;
   color: c.$blanco;
+  padding: 1rem;
 }

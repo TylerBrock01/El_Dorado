@@ -376,23 +376,27 @@ template {
   display: none;
 }
 
-.header h1 {
+.titulo {
   margin: 0;
+  background-color: rgb(235, 215, 97);
+  color: rgb(215, 70, 63);
+  text-transform: uppercase;
 }
-@media (max-width: 768px) {
-  .header h1 {
-    background-color: rgb(232, 224, 223);
+@media (min-width: 768px) {
+  .titulo {
+    background-color: rgb(13, 76, 141);
   }
 }
 
-.titulo {
-  font-size: 6rem;
-  color: rgb(215, 70, 63);
-  text-transform: uppercase;
-  background-color: rgb(235, 215, 97);
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav-bar {
+  position: absolute;
+  background-color: linear-gradient(270deg, rgba(232, 224, 223, 0.3), rgba(255, 255, 255, 0.3));
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -400,14 +404,18 @@ template {
 }
 
 .opcion-nav {
-  font-size: 2rem;
+  border-radius: 3rem;
   text-transform: uppercase;
-  padding: 1rem;
   background-color: rgb(14, 49, 67);
   color: #ffffff;
+  padding: 1rem;
 }
 
-.fondo-imagen {
-  position: relative;
-  min-height: 40rem;
+.imagen-background {
+  background-image: url("img/sea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 1280px;
 }

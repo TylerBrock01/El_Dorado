@@ -1,6 +1,9 @@
 @mixin telefono{
-
-  @media (max-width: 768px){
+  @media (min-width: 390px){
+    @content;
+  }
+}@mixin tablet{
+  @media (min-width: 768px){
     @content;
   }
 }
