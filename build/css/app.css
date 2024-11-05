@@ -396,6 +396,18 @@ template {
     height: 25%;
   }
 }
+@media (min-width: 768px) {
+  .titulo-imagen {
+    width: 15%;
+    height: 15%;
+  }
+}
+@media (min-width: 1440px) {
+  .titulo-imagen {
+    width: 10%;
+    height: 10%;
+  }
+}
 
 .header-contacto {
   display: flex;
@@ -513,4 +525,33 @@ template {
 .footer p {
   text-align: center;
   text-transform: capitalize;
+}
+
+.bar-menu {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(235, 215, 97);
+  align-items: center;
+  justify-content: space-between;
+  outline-color: black;
+}
+
+.horario {
+  color: black;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.boton-menu {
+  display: flex;
+}
+.boton-menu svg {
+  color: rgb(215, 70, 63);
+}
+.boton-menu svg:hover {
+  color: rgb(0, 0, 0);
+}
+.boton-menu:hover {
+  color: #ffffff;
 }

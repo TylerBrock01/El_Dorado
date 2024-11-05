@@ -14,6 +14,14 @@
     width: 25%;
     height: 25%;
   }
+  @include m.tablet{
+    width: 15%;
+    height: 15%;
+  }
+  @include m.desktop{
+    width: 10%;
+    height: 10%;
+  }
 }
 .header-contacto{
   display: flex;
