@@ -378,6 +378,7 @@ template {
 
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(235, 215, 97);
 }
 
@@ -392,8 +393,22 @@ template {
   }
 }
 
-.titulo {
+.header-contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-transform: capitalize;
   color: rgb(215, 70, 63);
+}
+.header-contacto svg {
+  color: green;
+}
+
+.numero {
+  color: rgb(0, 0, 0);
+}
+
+.titulo {
   text-transform: uppercase;
   margin: 0;
 }
@@ -452,6 +467,7 @@ template {
 }
 @media (max-width: 391px) {
   .nav-bar {
+    gap: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -470,11 +486,19 @@ template {
 }
 
 .opcion-nav {
+  display: flex;
+  justify-content: center;
   border-radius: 3rem;
   text-transform: capitalize;
-  background-color: rgb(14, 49, 67);
+  background-color: rgba(13, 76, 141, 0.5);
   color: #ffffff;
   padding: 1rem;
+  border: 2px solid rgb(215, 70, 63);
+}
+.opcion-nav:hover {
+  background-color: rgb(235, 215, 97);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(13, 76, 141);
 }
 
 .footer {

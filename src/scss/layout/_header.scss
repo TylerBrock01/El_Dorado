@@ -3,9 +3,10 @@
 @use "../base/mixins" as m;
 .header{
   display: flex;
+  justify-content: space-between;
   background-color: c.$amarillo;
-
 }
+
 .titulo-imagen{
   width: 10%;
   height: 10%;
@@ -14,8 +15,20 @@
     height: 25%;
   }
 }
-.titulo{
+.header-contacto{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-transform: capitalize;
   color: c.$rojo;
+  svg{
+    color: green;
+  }
+}
+.numero{
+  color: c.$negro;
+}
+.titulo{
   text-transform: uppercase;
   margin: 0;
   @include m.telefono{
