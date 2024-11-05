@@ -27,6 +27,9 @@
 }
 .numero{
   color: c.$negro;
+  &:hover{
+    color: green;
+  }
 }
 .titulo{
   text-transform: uppercase;

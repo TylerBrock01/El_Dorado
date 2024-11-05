@@ -407,6 +407,9 @@ template {
 .numero {
   color: rgb(0, 0, 0);
 }
+.numero:hover {
+  color: green;
+}
 
 .titulo {
   text-transform: uppercase;
@@ -501,7 +504,7 @@ template {
   border: 2px solid rgb(13, 76, 141);
 }
 
-.footer {
+.footer p {
   text-align: center;
   text-transform: capitalize;
 }

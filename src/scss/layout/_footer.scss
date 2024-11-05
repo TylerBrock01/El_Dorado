@@ -1,4 +1,8 @@
+@use "../base/colores" as c;
+
 .footer{
-  text-align: center;
-  text-transform: capitalize;
+  p{
+    text-align: center;
+    text-transform: capitalize;
+  }
 }
