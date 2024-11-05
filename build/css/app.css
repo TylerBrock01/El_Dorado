@@ -463,4 +463,5 @@ template {
 
 .footer {
   text-align: center;
+  text-transform: capitalize;
 }
