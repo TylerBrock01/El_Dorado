@@ -24,7 +24,7 @@
 
 .nav-bar{
   position: absolute;
-  background-color: linear-gradient(270deg, rgba(c.$gris, 0.3), rgba(c.$blanco, 0.3));
+  background: linear-gradient(270deg, rgba(c.$gris, 0.3), rgba(c.$blanco, 0.3));
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
