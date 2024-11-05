@@ -391,6 +391,11 @@ template {
     background-color: rgb(13, 76, 141);
   }
 }
+@media (min-width: 1440px) {
+  .titulo {
+    background-color: rgb(117, 181, 142);
+  }
+}
 
 .imagen {
   position: relative;
@@ -404,6 +409,16 @@ template {
   .imagen .overlay {
     display: flex;
     align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .imagen .overlay {
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .imagen .overlay {
+    text-align: end;
   }
 }
 @media (max-width: 391px) {
@@ -423,6 +438,18 @@ template {
   .nav-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+  }
+}
+@media (min-width: 1440px) {
+  .nav-bar {
+    justify-content: space-evenly;
   }
 }
 

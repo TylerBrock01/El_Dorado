@@ -13,4 +13,7 @@
   @include m.tablet{
     background-color: c.$azul;
   }
+  @include m.desktop {
+    background-color: c.$verdegris;
+  }
 }

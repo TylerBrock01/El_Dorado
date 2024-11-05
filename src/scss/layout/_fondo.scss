@@ -4,12 +4,17 @@
   position: relative;
   .overlay{
     position: absolute;
-    //background: linear-gradient(270deg, rgba(c.$negro, 0.3), rgba(c.$blanco, 0.3));
     background: linear-gradient(270deg, rgba(c.$negro, 0.3),rgba(c.$negro, 0.3));
     inset: 0;
     @include m.telefono{
       display: flex;
       align-items: center;
+    }
+    @include m.tablet{
+      text-align: center;
+    }
+    @include m.desktop{
+      text-align: end;
     }
   }
   img{

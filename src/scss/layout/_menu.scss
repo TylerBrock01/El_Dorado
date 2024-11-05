@@ -19,7 +19,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  @include m.tablet{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg, rgba(c.$negro, 0.3),rgb(c.$blanco,0.3),  rgba(c.$negro, 0.3) );
+  }
+  @include m.desktop{
+    justify-content: space-evenly;
+  }
 }
 .opcion-nav{
   border-radius: 3rem;
