@@ -378,9 +378,13 @@ template {
 
 .titulo {
   margin: 0;
-  background-color: rgb(235, 215, 97);
-  color: rgb(215, 70, 63);
   text-transform: uppercase;
+  color: rgb(215, 70, 63);
+}
+@media (max-width: 391px) {
+  .titulo {
+    background-color: rgb(235, 215, 97);
+  }
 }
 @media (min-width: 768px) {
   .titulo {
@@ -388,19 +392,26 @@ template {
   }
 }
 
-.menu-nav {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+@media (max-width: 391px) {
+  .menu-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .nav-bar {
   position: absolute;
   background: linear-gradient(270deg, rgba(232, 224, 223, 0.3), rgba(255, 255, 255, 0.3));
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
+}
+@media (max-width: 391px) {
+  .nav-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .opcion-nav {

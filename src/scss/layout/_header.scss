@@ -1,14 +1,15 @@
-
 @use '../base/variables' as v;
 @use '../base/colores' as c;
 @use "../base/mixins" as m;
 .header{
 }
 .titulo{
+  @include m.telefono{
+    background-color: c.$amarillo;
+  }
   margin: 0;
-  background-color: c.$amarillo;
-  color: c.$rojo;
   text-transform: uppercase;
+  color: c.$rojo;
   @include m.tablet{
     background-color: c.$azul;
   }
@@ -16,17 +17,22 @@
 .menu-opcion{
 }
 .menu-nav{
-  //position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  @include m.telefono{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
 .nav-bar{
   position: absolute;
   background: linear-gradient(270deg, rgba(c.$gris, 0.3), rgba(c.$blanco, 0.3));
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include m.telefono{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   gap: 1rem;
   padding: 1rem;
 }
