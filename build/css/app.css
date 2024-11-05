@@ -393,7 +393,7 @@ template {
 }
 @media (min-width: 1440px) {
   .titulo {
-    background-color: rgb(117, 181, 142);
+    background-color: rgb(235, 215, 97);
   }
 }
 
@@ -459,4 +459,8 @@ template {
   background-color: rgb(14, 49, 67);
   color: #ffffff;
   padding: 1rem;
+}
+
+.footer {
+  text-align: center;
 }
