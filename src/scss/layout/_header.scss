@@ -2,6 +2,17 @@
 @use '../base/colores' as c;
 @use "../base/mixins" as m;
 .header{
+  display: flex;
+  background-color: c.$amarillo;
+
+}
+.titulo-imagen{
+  width: 10%;
+  height: 10%;
+  @include m.telefono{
+    width: 25%;
+    height: 25%;
+  }
 }
 .titulo{
   color: c.$rojo;

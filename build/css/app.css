@@ -376,6 +376,22 @@ template {
   display: none;
 }
 
+.header {
+  display: flex;
+  background-color: rgb(235, 215, 97);
+}
+
+.titulo-imagen {
+  width: 10%;
+  height: 10%;
+}
+@media (max-width: 391px) {
+  .titulo-imagen {
+    width: 25%;
+    height: 25%;
+  }
+}
+
 .titulo {
   color: rgb(215, 70, 63);
   text-transform: uppercase;
