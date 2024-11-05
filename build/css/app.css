@@ -514,3 +514,23 @@ template {
   text-align: center;
   text-transform: capitalize;
 }
+
+.bar-menu {
+  display: flex;
+  padding: 1rem;
+  justify-content: end;
+  background-color: rgb(235, 215, 97);
+}
+
+.boton-menu {
+  display: flex;
+  align-items: center;
+}
+.boton-menu svg {
+  width: 180%;
+  height: 180%;
+  color: rgb(215, 70, 63);
+}
+.boton-menu:hover {
+  color: #ffffff;
+}

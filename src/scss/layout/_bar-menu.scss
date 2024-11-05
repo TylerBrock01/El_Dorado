@@ -1,0 +1,24 @@
+@use "../base/colores" as c;
+
+.bar-menu{
+  display: flex;
+  padding: 1rem;
+  justify-content: end;
+  background-color: c.$amarillo;
+
+}
+.boton-menu{
+  display: flex;
+  align-items: center;
+  //border-radius: 15%;
+  //border: 1px solid black;
+  svg{
+    width: 180%;
+    height: 180%;
+    color: c.$rojo;
+  }
+  &:hover{
+        //background-color: rgb(c.$negro, 0.5);
+    color: c.$blanco;
+  }
+}
