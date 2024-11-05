@@ -403,6 +403,7 @@ template {
   flex-direction: row;
   text-transform: capitalize;
   color: rgb(215, 70, 63);
+  padding: 1rem;
 }
 .header-contacto svg {
   color: green;
