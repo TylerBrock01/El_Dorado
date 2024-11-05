@@ -1,0 +1,30 @@
+@use "../base/colores" as c;
+@use "../base/mixins" as m;
+.menu-opcion{
+}
+.menu-nav{
+  @include m.telefono{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+.nav-bar{
+  gap: 1rem;
+  padding: 1rem;
+  @include m.telefono{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+.opcion-nav{
+  border-radius: 3rem;
+  text-transform: capitalize;
+  background-color: c.$azulverde;
+  color: c.$blanco;
+  padding: 1rem;
+}

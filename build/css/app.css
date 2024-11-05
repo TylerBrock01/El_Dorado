@@ -377,9 +377,9 @@ template {
 }
 
 .titulo {
-  margin: 0;
-  text-transform: uppercase;
   color: rgb(215, 70, 63);
+  text-transform: uppercase;
+  margin: 0;
 }
 @media (max-width: 391px) {
   .titulo {
@@ -392,6 +392,20 @@ template {
   }
 }
 
+.imagen {
+  position: relative;
+}
+.imagen .overlay {
+  position: absolute;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  inset: 0;
+}
+@media (max-width: 391px) {
+  .imagen .overlay {
+    display: flex;
+    align-items: center;
+  }
+}
 @media (max-width: 391px) {
   .menu-nav {
     position: relative;
@@ -402,8 +416,6 @@ template {
 }
 
 .nav-bar {
-  position: absolute;
-  background: linear-gradient(270deg, rgba(232, 224, 223, 0.3), rgba(255, 255, 255, 0.3));
   gap: 1rem;
   padding: 1rem;
 }

@@ -4,42 +4,13 @@
 .header{
 }
 .titulo{
+  color: c.$rojo;
+  text-transform: uppercase;
+  margin: 0;
   @include m.telefono{
     background-color: c.$amarillo;
   }
-  margin: 0;
-  text-transform: uppercase;
-  color: c.$rojo;
   @include m.tablet{
     background-color: c.$azul;
   }
-}
-.menu-opcion{
-}
-.menu-nav{
-  @include m.telefono{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-}
-
-.nav-bar{
-  position: absolute;
-  background: linear-gradient(270deg, rgba(c.$gris, 0.3), rgba(c.$blanco, 0.3));
-  @include m.telefono{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  gap: 1rem;
-  padding: 1rem;
-}
-.opcion-nav{
-  border-radius: 3rem;
-  text-transform: capitalize;
-  background-color: c.$azulverde;
-  color: c.$blanco;
-  padding: 1rem;
 }
