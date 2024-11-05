@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  text-decoration: none;
+}
+
 h1, h2, h3 {
   margin: 0 0 5rem 0;
   font-weight: 900;
@@ -491,6 +495,7 @@ template {
 .opcion-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 3rem;
   text-transform: capitalize;
   background-color: rgba(13, 76, 141, 0.5);
