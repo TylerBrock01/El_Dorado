@@ -33,8 +33,9 @@
   text-transform: capitalize;
   color: c.$rojo;
   padding: 1rem;
+  gap: 0.5rem;
   svg{
-    color: green;
+    color: c.$verdegris;
   }
   .orden{
     margin: 0;
@@ -50,8 +51,10 @@
   display: flex;
   text-align: end;
   justify-content: end;
+  padding-right: 1rem;
+  gap: 0.5rem;
   .horario{
-    color: black;
+    color: c.$negro;
     text-transform: capitalize;
     margin: 0;
 

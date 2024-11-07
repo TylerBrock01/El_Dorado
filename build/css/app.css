@@ -420,9 +420,10 @@ template {
   text-transform: capitalize;
   color: rgb(215, 70, 63);
   padding: 1rem;
+  gap: 0.5rem;
 }
 .header-contacto svg {
-  color: green;
+  color: rgb(117, 181, 142);
 }
 .header-contacto .orden {
   margin: 0;
@@ -438,9 +439,11 @@ template {
   display: flex;
   text-align: end;
   justify-content: end;
+  padding-right: 1rem;
+  gap: 0.5rem;
 }
 .header-horario .horario {
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: capitalize;
   margin: 0;
 }
@@ -483,7 +486,6 @@ template {
 
 .nav-bar {
   gap: 1rem;
-  padding: 1rem;
 }
 @media (max-width: 391px) {
   .nav-bar {
