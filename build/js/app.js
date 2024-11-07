@@ -1,7 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    main()
 })
-
-function CrearMenu() {
-    const menu = document.getElementById('menu');
-}

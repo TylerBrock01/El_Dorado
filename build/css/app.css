@@ -42,13 +42,11 @@ button {
 }
 
 h1, h2, h3 {
-  margin: 0 0 5rem 0;
   font-weight: 900;
 }
 
 h1 {
   font-size: 6rem;
-  padding: 1rem;
 }
 
 h2 {
@@ -549,4 +547,29 @@ template {
 .footer p {
   text-align: center;
   text-transform: capitalize;
+}
+
+.menu {
+  border-style: dotted;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-titulo {
+  background-color: rgb(235, 215, 97);
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  text-transform: capitalize;
+  border-left-style: solid;
+  border-width: 1rem;
+  border-color: rgb(215, 70, 63);
+}
+.menu-titulo h3 {
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.menu-descripcion {
+  padding: 0 1rem 1rem 1rem;
 }

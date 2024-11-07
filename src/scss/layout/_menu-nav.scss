@@ -1,0 +1,46 @@
+@use "../base/colores" as c;
+@use "../base/mixins" as m;
+.menu-opcion{
+}
+.menu-nav{
+  @include m.telefono{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+.nav-bar{
+  gap: 1rem;
+  @include m.telefono{
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include m.tablet{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg, rgba(c.$negro, 0.3),rgb(c.$blanco,0.3),  rgba(c.$negro, 0.3) );
+  }
+  @include m.desktop{
+    justify-content: space-evenly;
+  }
+}
+.opcion-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  text-transform: capitalize;
+  background-color: rgb(c.$azul, 0.5);
+  color: c.$blanco;
+  padding: 1rem;
+  border: 2px solid c.$rojo;
+  &:hover{
+    background-color: c.$amarillo;
+    color: c.$negro;
+    border: 2px solid c.$azul;
+  }
+}
