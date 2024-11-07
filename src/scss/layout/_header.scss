@@ -6,7 +6,6 @@
   justify-content: space-between;
   background-color: c.$amarillo;
 }
-
 .titulo-imagen{
   width: 10%;
   height: 10%;
@@ -24,12 +23,10 @@
   }
 }
 .header-derecho{
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 .header-contacto{
   display: flex;
-  flex-direction: row;
   text-transform: capitalize;
   color: c.$rojo;
   padding: 1rem;
@@ -60,7 +57,29 @@
 
   }
   svg{
-    color: black;
+    color: c.$azul;
+  }
+}
+.header-ubicacion{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  .ubicacion{
+    display: flex;
+    padding: 0.25rem;
+    border-style: solid;
+    border-color: c.$negro;
+    background-color: c.$verdegris;
+    h5{
+      color: c.$negro;
+      margin: 0;
+      text-transform: capitalize;
+    }
+    svg{
+      margin: 0;
+      color: c.$rojo;
+    }
   }
 }
 

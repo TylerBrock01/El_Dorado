@@ -410,13 +410,11 @@ template {
 }
 
 .header-derecho {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .header-contacto {
   display: flex;
-  flex-direction: row;
   text-transform: capitalize;
   color: rgb(215, 70, 63);
   padding: 1rem;
@@ -448,7 +446,30 @@ template {
   margin: 0;
 }
 .header-horario svg {
-  color: black;
+  color: rgb(13, 76, 141);
+}
+
+.header-ubicacion {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.header-ubicacion .ubicacion {
+  display: flex;
+  padding: 0.25rem;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(117, 181, 142);
+}
+.header-ubicacion .ubicacion h5 {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  text-transform: capitalize;
+}
+.header-ubicacion .ubicacion svg {
+  margin: 0;
+  color: rgb(215, 70, 63);
 }
 
 .imagen {
