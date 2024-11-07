@@ -71,6 +71,7 @@
     border-style: solid;
     border-color: c.$negro;
     background-color: c.$verdegris;
+    gap: 0.5rem;
     h5{
       color: c.$negro;
       margin: 0;
@@ -78,7 +79,7 @@
     }
     svg{
       margin: 0;
-      color: c.$rojo;
+      color: c.$negro;
     }
   }
 }
