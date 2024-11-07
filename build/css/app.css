@@ -409,9 +409,13 @@ template {
   }
 }
 
+.header-derecho {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-contacto {
   display: flex;
-  align-items: center;
   flex-direction: row;
   text-transform: capitalize;
   color: rgb(215, 70, 63);
@@ -420,32 +424,28 @@ template {
 .header-contacto svg {
   color: green;
 }
-
-.numero {
+.header-contacto .orden {
+  margin: 0;
+}
+.header-contacto .numero {
   color: rgb(0, 0, 0);
 }
-.numero:hover {
+.header-contacto .numero:hover {
   color: green;
 }
 
-.titulo {
-  text-transform: uppercase;
+.header-horario {
+  display: flex;
+  text-align: end;
+  justify-content: end;
+}
+.header-horario .horario {
+  color: black;
+  text-transform: capitalize;
   margin: 0;
 }
-@media (max-width: 391px) {
-  .titulo {
-    background-color: rgb(235, 215, 97);
-  }
-}
-@media (min-width: 768px) {
-  .titulo {
-    background-color: rgb(13, 76, 141);
-  }
-}
-@media (min-width: 1440px) {
-  .titulo {
-    background-color: rgb(235, 215, 97);
-  }
+.header-horario svg {
+  color: black;
 }
 
 .imagen {
@@ -525,33 +525,4 @@ template {
 .footer p {
   text-align: center;
   text-transform: capitalize;
-}
-
-.bar-menu {
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: rgb(235, 215, 97);
-  align-items: center;
-  justify-content: space-between;
-  outline-color: black;
-}
-
-.horario {
-  color: black;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-.boton-menu {
-  display: flex;
-}
-.boton-menu svg {
-  color: rgb(215, 70, 63);
-}
-.boton-menu svg:hover {
-  color: rgb(0, 0, 0);
-}
-.boton-menu:hover {
-  color: #ffffff;
 }

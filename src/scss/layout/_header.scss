@@ -23,9 +23,12 @@
     height: 10%;
   }
 }
+.header-derecho{
+  display: flex;
+  flex-direction: column;
+}
 .header-contacto{
   display: flex;
-  align-items: center;
   flex-direction: row;
   text-transform: capitalize;
   color: c.$rojo;
@@ -33,23 +36,28 @@
   svg{
     color: green;
   }
-}
-.numero{
-  color: c.$negro;
-  &:hover{
-    color: green;
+  .orden{
+    margin: 0;
+  }
+  .numero{
+    color: c.$negro;
+    &:hover{
+      color: green;
+    }
   }
 }
-.titulo{
-  text-transform: uppercase;
-  margin: 0;
-  @include m.telefono{
-    background-color: c.$amarillo;
+.header-horario{
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  .horario{
+    color: black;
+    text-transform: capitalize;
+    margin: 0;
+
   }
-  @include m.tablet{
-    background-color: c.$azul;
-  }
-  @include m.desktop {
-    background-color: c.$amarillo;
+  svg{
+    color: black;
   }
 }
+
