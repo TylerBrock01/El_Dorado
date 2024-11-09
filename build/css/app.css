@@ -532,12 +532,11 @@ template {
   padding: 0 1rem 1rem 1rem;
 }
 .contenido-imagen {
-  background-color: black;
+  padding-left: 1rem;
 }
 
-.menu-nav {
-  display: flex;
-  align-items: center;
+.menu-titulo-bar {
+  text-transform: capitalize;
 }
 
 .bar-titulo {

@@ -1,14 +1,12 @@
 @use "../base/colores" as c;
 @use "../base/mixins" as m;
 .contenido-imagen{
-  background-color: black;
+  padding-left: 1rem;
 }
 .menu-nav{
-  display: flex;
-  align-items: center;
 }
-.nav-bar{
-
+.menu-titulo-bar{
+  text-transform: capitalize;
 }
 .bar-titulo{
   margin: 0;
