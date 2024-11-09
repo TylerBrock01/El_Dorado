@@ -3,16 +3,13 @@
 @use "../base/mixins" as m;
 @use "sass:color";
 .header{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: c.$amarillo;
 }
-.titulo-imagen{
-  width: 10%;
-  height: 10%;
+.header-imagen{
   @include m.telefono{
-    width: 25%;
-    height: 25%;
+
   }
   @include m.tablet{
     width: 15%;
@@ -24,32 +21,46 @@
   }
 }
 .header-derecho{
-  display: block;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  @include m.tablet{
+    flex-direction: row;
+  }
 }
 .header-contacto{
+  //
   display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
   text-transform: capitalize;
   color: c.$rojo;
-  padding: 1rem;
   gap: 0.5rem;
-  svg{
-    color: c.$verdegris;
-  }
-  .orden{
-    margin: 0;
-  }
-  .numero{
-    color: c.$negro;
-    &:hover{
-      color: green;
+  .contacto{
+    display: flex;
+    flex-direction: row;
+    .contacto-titulo{
+      margin: 0;
     }
+    .numero{
+      color: black;
+      &:hover{
+        color: green;
+      }
+    }
+    svg{
+      color: c.$verdegris;
+    }
+  //
   }
 }
 .header-horario{
   display: flex;
-  text-align: end;
+  flex-direction: row;
+  align-items: center;
   justify-content: end;
-  padding-right: 1rem;
   gap: 0.5rem;
   .horario{
     color: c.$negro;
@@ -63,18 +74,19 @@
 }
 .header-ubicacion{
   display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  padding-bottom: 1rem;
-
+  flex-direction: row;
+  justify-content: space-between;
   .ubicacion{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 0.25rem;
     border-style: solid;
     border-color: c.$negro;
     background-color: c.$verdegris;
     gap: 0.5rem;
-    h5{
+    .titulo-ubicacion{
       color: c.$negro;
       margin: 0;
       text-transform: capitalize;
