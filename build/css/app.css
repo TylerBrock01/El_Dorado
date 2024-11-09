@@ -449,11 +449,19 @@ template {
   color: rgb(13, 76, 141);
 }
 
-.header-ubicacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 1rem;
+@media (max-width: 391px) {
+  .header-ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .header-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .header-ubicacion .ubicacion {
   display: flex;
@@ -465,6 +473,11 @@ template {
   border-color: rgb(0, 0, 0);
   background-color: rgb(117, 181, 142);
   gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .header-ubicacion .ubicacion {
+    grid-column: 1/2;
+  }
 }
 .header-ubicacion .ubicacion .titulo-ubicacion {
   color: rgb(0, 0, 0);
@@ -482,10 +495,17 @@ template {
   background-color: rgb(117, 181, 142);
   border-radius: 25%;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(0, 0, 0);
+}
+@media (min-width: 768px) {
+  .header-ubicacion .barra-menu {
+    grid-column: 4/5;
+  }
 }
 .header-ubicacion .barra-menu .isotipo-barra {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
 }
 .header-ubicacion .barra-menu .isotipo-barra svg {
@@ -507,6 +527,36 @@ template {
   align-items: start;
   justify-content: center;
 }
+.menu-nav {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  inset: 0;
+}
+
+.nav-section {
+  position: relative;
+  grid-column: 2/3;
+  background-color: rgba(235, 215, 97, 0.6);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.opcion-section {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.opcion-section .section-titulo {
+  margin: 0;
+  text-transform: capitalize;
+}
+
 .footer p {
   text-align: center;
   text-transform: capitalize;

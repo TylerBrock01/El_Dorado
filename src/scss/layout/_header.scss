@@ -72,10 +72,16 @@
   }
 }
 .header-ubicacion{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 1rem;
+  @include m.telefono{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+  @include m.tablet{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
   .ubicacion{
     display: flex;
     flex-direction: row;
@@ -86,6 +92,9 @@
     border-color: c.$negro;
     background-color: c.$verdegris;
     gap: 0.5rem;
+    @include m.tablet{
+      grid-column: 1/2;
+    }
     .titulo-ubicacion{
       color: c.$negro;
       margin: 0;
@@ -104,9 +113,14 @@
     background-color: c.$verdegris ;
     border-radius:25%;
     border-style: solid;
-    border-color: black;
+    border-color: c.$negro;
+    @include m.tablet{
+      grid-column: 4/5;
+    }
     .isotipo-barra{
       display: flex;
+      flex-direction: row;
+      justify-content: center;
       text-align: center;
       svg{
         color: black;
