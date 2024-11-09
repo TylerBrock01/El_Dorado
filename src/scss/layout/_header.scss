@@ -1,6 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/colores' as c;
 @use "../base/mixins" as m;
+@use "sass:color";
 .header{
   display: flex;
   justify-content: space-between;
@@ -63,8 +64,9 @@
 .header-ubicacion{
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-bottom: 1rem;
+
   .ubicacion{
     display: flex;
     padding: 0.25rem;
@@ -80,6 +82,27 @@
     svg{
       margin: 0;
       color: c.$negro;
+    }
+    &:hover{
+      background-color: color.scale(c.$verdegris, $lightness: -20%);
+
+    }
+  }
+  .barra-menu{
+    background-color: c.$verdegris ;
+    border-radius:25%;
+    border-style: solid;
+    border-color: black;
+    .isotipo-barra{
+      display: flex;
+      text-align: center;
+      svg{
+        color: black;
+      }
+    }
+    &:hover{
+      background-color: color.scale(c.$verdegris, $lightness: -20%);
+
     }
   }
 }

@@ -450,7 +450,7 @@ template {
 .header-ubicacion {
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-bottom: 1rem;
 }
 .header-ubicacion .ubicacion {
@@ -469,6 +469,25 @@ template {
 .header-ubicacion .ubicacion svg {
   margin: 0;
   color: rgb(0, 0, 0);
+}
+.header-ubicacion .ubicacion:hover {
+  background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
+}
+.header-ubicacion .barra-menu {
+  background-color: rgb(117, 181, 142);
+  border-radius: 25%;
+  border-style: solid;
+  border-color: black;
+}
+.header-ubicacion .barra-menu .isotipo-barra {
+  display: flex;
+  text-align: center;
+}
+.header-ubicacion .barra-menu .isotipo-barra svg {
+  color: black;
+}
+.header-ubicacion .barra-menu:hover {
+  background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
 }
 
 .imagen {
