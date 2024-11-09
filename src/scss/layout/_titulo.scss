@@ -1,0 +1,20 @@
+@use "../base/colores" as c;
+@use "../base/mixins" as m;
+.contenido-imagen{
+  background-color: black;
+}
+.menu-nav{
+  display: flex;
+  align-items: center;
+}
+.nav-bar{
+
+}
+.bar-titulo{
+  margin: 0;
+  border-bottom-style: inset;
+  border-color: white;
+}
+.bar-titulo-2{
+  margin: 0;
+}
