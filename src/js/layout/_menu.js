@@ -4,7 +4,7 @@ function mostrar_ordenes() {
     // menu.insertBefore(,menu);
     const div = document.createElement("DIV");
     div.className = "menu-nav contenedor";
-    const section = document.createElement("SECTION");
-    section.className = "";
+    const section = document.createElement("NAV");
+    section.className = "nav-section";
 
 }

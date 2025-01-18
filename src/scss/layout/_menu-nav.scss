@@ -19,8 +19,9 @@
 .opcion-section{
   display: flex;
   justify-content: center;
-  background-color: black;
-  color: white;
+  background-color: c.$verdegris;
+  color: black;
+  border: solid black;
   align-items: center;
   .section-titulo{
     margin: 0;

@@ -548,8 +548,9 @@ template {
 .opcion-section {
   display: flex;
   justify-content: center;
-  background-color: black;
-  color: white;
+  background-color: rgb(117, 181, 142);
+  color: black;
+  border: solid black;
   align-items: center;
 }
 .opcion-section .section-titulo {
