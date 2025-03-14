@@ -1,10 +1,24 @@
 
 function mostrar_ordenes() {
-    const menu = document.getElementById("opciones")
-    // menu.insertBefore(,menu);
+    const overlay = document.getElementById("overlay")
+
     const div = document.createElement("DIV");
     div.className = "menu-nav contenedor";
-    const section = document.createElement("NAV");
-    section.className = "nav-section";
+    div.id = "menu-nav";
+    overlay.appendChild(div);
+    const nav = document.createElement("NAV");
+    nav.className = "nav-section";
+    overlay.appendChild(nav);
 
+
+}
+function crear_nav(){
+
+    for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+    }
+    const a = document.createElement("A");
+    a.className = "option-section";
+    a.href = "#";
+    a.appendChild(nav);
 }

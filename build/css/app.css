@@ -545,7 +545,7 @@ template {
   gap: 1rem;
 }
 
-.opcion-section {
+.option-section {
   display: flex;
   justify-content: center;
   background-color: rgb(117, 181, 142);
@@ -553,7 +553,7 @@ template {
   border: solid black;
   align-items: center;
 }
-.opcion-section .section-titulo {
+.option-section .section-titulo {
   margin: 0;
   text-transform: capitalize;
 }
