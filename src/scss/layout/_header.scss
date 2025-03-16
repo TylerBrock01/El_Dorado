@@ -7,14 +7,18 @@
   grid-template-columns: repeat(3, 1fr);
   background-color: c.$amarillo;
   padding: 1rem;
+  gap: 1rem;
   border: 1px black solid;
 }
 .header-imagen{
+  @include m.mini{
+    height: 80%;
+  }
   @include m.telefono{
-
+    width: 100%;
+    //height: 80%;
   }
   @include m.tablet{
-    width: 50%;
     height: 100%;
   }
   @include m.desktop{
@@ -22,10 +26,11 @@
   }
 }
 .header-derecho{
-  grid-column: 2/4;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-
+  grid-column: 2/4;
+  @include m.telefono{
+    grid-template-rows: repeat(3, 1fr);
+  }
   @include m.tablet{
     flex-direction: row;
     font-size: 2rem;
@@ -34,9 +39,10 @@
 .header-contacto{
   //
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: end;
   align-items: center;
+
   text-transform: capitalize;
   color: c.$rojo;
   gap: 0.5rem;
@@ -75,11 +81,8 @@
   }
 }
 .header-ubicacion-menu{
-  .titulo-ubicacion{
-    color: c.$negro;
-    margin: 0;
-    text-transform: capitalize;
-  }
+  gap: 0.5rem;
+  display: grid;
   @include m.telefono{
     display: flex;
     flex-direction: row;
@@ -89,6 +92,11 @@
   @include m.tablet{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .titulo-ubicacion{
+    color: c.$negro;
+    margin: 0;
+    text-transform: capitalize;
   }
   .ubicacion{
     display: flex;
@@ -113,11 +121,22 @@
     }
   }
 }
+.ubicacion-menu{
+  @include m.mini{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .barra-menu{
   background-color: c.$verdegris ;
   border-radius:25%;
   border: 1px c.$negro solid;
-  align-items: center;
+  @include m.mini{
+    padding: 1rem;
+    border-radius: 0;
+  }
+  @include m.telefono{
+  }
   @include m.tablet{
     grid-column: 4/5;
   }

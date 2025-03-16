@@ -6,6 +6,15 @@
 .menu-titulo-bar{
   text-transform: capitalize;
 }
+@include m.tablet{
+  .bar-titulo{
+    font-size: 4rem;
+  }
+  .bar-titulo-2{
+    font-size: 3rem;
+
+  }
+}
 .bar-titulo{
   margin: 0;
   border-bottom-style: inset;
