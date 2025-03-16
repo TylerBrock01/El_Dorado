@@ -3,31 +3,32 @@
 @use "../base/mixins" as m;
 @use "sass:color";
 .header{
+  padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 30% 70%;
   background-color: c.$amarillo;
-  padding: 1rem;
   gap: 1rem;
   border: 1px black solid;
 }
 .header-imagen{
+
   @include m.mini{
-    height: 80%;
-  }
-  @include m.telefono{
     width: 100%;
-    //height: 80%;
-  }
-  @include m.tablet{
     height: 100%;
   }
-  @include m.desktop{
-    width: 30%;
-  }
+  //@include m.telefono{
+  //  width: 130%;
+  //  height: 100%;
+  //}
+  //@include m.tablet{
+  //  height: 100%;
+  //}
+  //@include m.desktop{
+  //  width: 30%;
+  //}
 }
 .header-derecho{
   display: grid;
-  grid-column: 2/4;
   @include m.telefono{
     grid-template-rows: repeat(3, 1fr);
   }
@@ -37,18 +38,18 @@
   }
 }
 .header-contacto{
-  //
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: end;
-  align-items: center;
-
   text-transform: capitalize;
   color: c.$rojo;
-  gap: 0.5rem;
   .contacto{
     display: flex;
     flex-direction: row;
+  ;
+    @include m.desktop{
+
+    }
     .contacto-titulo{
       margin: 0;
     }
@@ -66,15 +67,14 @@
 }
 .header-horario{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: end;
+;
+  //gap: 0.5rem;
   .horario{
     color: c.$negro;
     text-transform: capitalize;
     margin: 0;
-
   }
   svg{
     color: c.$azul;
@@ -83,16 +83,19 @@
 .header-ubicacion-menu{
   gap: 0.5rem;
   display: grid;
+
+  @include m.mini{
+    grid-template-columns: 70% 30%;
+  }
   @include m.telefono{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1rem;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+    //padding-left: 1rem;
   }
-  @include m.tablet{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  //@include m.tablet{
+  //  grid-template-columns: repeat(4, 1fr);
+  //}
   .titulo-ubicacion{
     color: c.$negro;
     margin: 0;
@@ -101,9 +104,7 @@
   .ubicacion{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25rem;
+    padding: 1rem;
     border: 1px c.$negro solid;
     background-color: c.$verdegris;
     gap: 0.5rem;
@@ -122,9 +123,12 @@
   }
 }
 .ubicacion-menu{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include m.mini{
-    display: flex;
-    flex-direction: column;
+
   }
 }
 .barra-menu{
@@ -132,25 +136,8 @@
   border-radius:25%;
   border: 1px c.$negro solid;
   @include m.mini{
-    padding: 1rem;
+      padding: 1.2rem;
     border-radius: 0;
   }
-  @include m.telefono{
-  }
-  @include m.tablet{
-    grid-column: 4/5;
-  }
-  .isotipo-barra{
-    display: flex;
-    //flex-direction: row;
-    //justify-content: center;
-    text-align: center;
-    svg{
-      color: black;
-      }
-    }
-    &:hover{
-      background-color: color.scale(c.$verdegris, $lightness: -20%);
-    }
   }
 

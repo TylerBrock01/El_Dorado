@@ -379,38 +379,23 @@ template {
 }
 
 .header {
+  padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 30% 70%;
   background-color: rgb(235, 215, 97);
-  padding: 1rem;
   gap: 1rem;
   border: 1px black solid;
 }
 
 @media (max-width: 413px) {
   .header-imagen {
-    height: 80%;
-  }
-}
-@media (max-width: 400px) {
-  .header-imagen {
     width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .header-imagen {
     height: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .header-imagen {
-    width: 30%;
   }
 }
 
 .header-derecho {
   display: grid;
-  grid-column: 2/4;
 }
 @media (max-width: 400px) {
   .header-derecho {
@@ -426,12 +411,10 @@ template {
 
 .header-contacto {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: end;
-  align-items: center;
   text-transform: capitalize;
   color: rgb(215, 70, 63);
-  gap: 0.5rem;
 }
 .header-contacto .contacto {
   display: flex;
@@ -452,10 +435,8 @@ template {
 
 .header-horario {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: end;
 }
 .header-horario .horario {
   color: rgb(0, 0, 0);
@@ -470,18 +451,9 @@ template {
   gap: 0.5rem;
   display: grid;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .header-ubicacion-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .header-ubicacion-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 70% 30%;
   }
 }
 .header-ubicacion-menu .titulo-ubicacion {
@@ -492,9 +464,7 @@ template {
 .header-ubicacion-menu .ubicacion {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.25rem;
+  padding: 1rem;
   border: 1px rgb(0, 0, 0) solid;
   background-color: rgb(117, 181, 142);
   gap: 0.5rem;
@@ -512,13 +482,12 @@ template {
   background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
 }
 
-@media (max-width: 413px) {
-  .ubicacion-menu {
-    display: flex;
-    flex-direction: column;
-  }
+.ubicacion-menu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .barra-menu {
   background-color: rgb(117, 181, 142);
   border-radius: 25%;
@@ -526,24 +495,9 @@ template {
 }
 @media (max-width: 413px) {
   .barra-menu {
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 0;
   }
-}
-@media (max-width: 768px) {
-  .barra-menu {
-    grid-column: 4/5;
-  }
-}
-.barra-menu .isotipo-barra {
-  display: flex;
-  text-align: center;
-}
-.barra-menu .isotipo-barra svg {
-  color: black;
-}
-.barra-menu:hover {
-  background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
 }
 
 .imagen {
