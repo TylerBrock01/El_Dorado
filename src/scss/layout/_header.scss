@@ -6,6 +6,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: c.$amarillo;
+  padding: 1rem;
+  border: 1px black solid;
 }
 .header-imagen{
   @include m.telefono{
@@ -26,6 +28,7 @@
 
   @include m.tablet{
     flex-direction: row;
+    font-size: 2rem;
   }
 }
 .header-contacto{
@@ -71,7 +74,12 @@
     color: c.$azul;
   }
 }
-.header-ubicacion{
+.header-ubicacion-menu{
+  .titulo-ubicacion{
+    color: c.$negro;
+    margin: 0;
+    text-transform: capitalize;
+  }
   @include m.telefono{
     display: flex;
     flex-direction: row;
@@ -88,18 +96,13 @@
     justify-content: center;
     align-items: center;
     padding: 0.25rem;
-    border-style: solid;
-    border-color: c.$negro;
+    border: 1px c.$negro solid;
     background-color: c.$verdegris;
     gap: 0.5rem;
     @include m.tablet{
-      grid-column: 1/2;
+      grid-column: 1/3;
     }
-    .titulo-ubicacion{
-      color: c.$negro;
-      margin: 0;
-      text-transform: capitalize;
-    }
+
     svg{
       margin: 0;
       color: c.$negro;
@@ -109,27 +112,26 @@
 
     }
   }
-  .barra-menu{
-    background-color: c.$verdegris ;
-    border-radius:25%;
-    border-style: solid;
-    border-color: c.$negro;
-    @include m.tablet{
-      grid-column: 4/5;
-    }
-    .isotipo-barra{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      svg{
-        color: black;
+}
+.barra-menu{
+  background-color: c.$verdegris ;
+  border-radius:25%;
+  border: 1px c.$negro solid;
+  align-items: center;
+  @include m.tablet{
+    grid-column: 4/5;
+  }
+  .isotipo-barra{
+    display: flex;
+    //flex-direction: row;
+    //justify-content: center;
+    text-align: center;
+    svg{
+      color: black;
       }
     }
     &:hover{
       background-color: color.scale(c.$verdegris, $lightness: -20%);
-
     }
   }
-}
 

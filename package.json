@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/TylerBrock01/El_Dorado#readme",
   "devDependencies": {
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.80.4"
