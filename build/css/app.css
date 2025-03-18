@@ -387,11 +387,9 @@ template {
   border: 1px black solid;
 }
 
-@media (max-width: 413px) {
-  .header-imagen {
-    width: 100%;
-    height: 100%;
-  }
+.header-imagen {
+  width: 100%;
+  height: 100%;
 }
 
 .header-derecho {
@@ -399,14 +397,14 @@ template {
   display: grid;
   font-size: 2rem;
 }
-@media (max-width: 413px) {
+@media (min-width: 413px) and (max-width: 400px) {
   .header-derecho {
     grid-template-rows: 25%;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1015px) and (max-width: 1440px) {
   .header-derecho {
-    flex-direction: row;
+    grid-template-rows: 25%;
   }
 }
 
@@ -414,6 +412,7 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  align-items: center;
   text-transform: capitalize;
   color: rgb(215, 70, 63);
 }
@@ -421,7 +420,7 @@ template {
   margin: 0;
 }
 .header-contacto .contacto-numero-icon {
-  display: flex;
+  margin: 0;
 }
 .header-contacto .numero {
   color: black;
@@ -437,6 +436,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: end;
+  justify-content: center;
 }
 .header-horario .horario {
   color: rgb(0, 0, 0);
@@ -451,28 +451,23 @@ template {
   gap: 0.5rem;
   display: grid;
 }
-@media (max-width: 413px) {
+@media (min-width: 390px) and (max-width: 768px) {
   .header-ubicacion-menu {
     grid-template-columns: 70% 30%;
   }
 }
-.header-ubicacion-menu .titulo-ubicacion {
-  color: rgb(0, 0, 0);
-  margin: 0;
-  text-transform: capitalize;
+.header-ubicacion-menu .ubicacion-menu {
+  display: grid;
 }
 .header-ubicacion-menu .ubicacion {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   border: 1px rgb(0, 0, 0) solid;
   background-color: rgb(117, 181, 142);
   gap: 0.5rem;
-}
-@media (max-width: 768px) {
-  .header-ubicacion-menu .ubicacion {
-    grid-column: 1/3;
-  }
 }
 .header-ubicacion-menu .ubicacion svg {
   margin: 0;
@@ -481,18 +476,24 @@ template {
 .header-ubicacion-menu .ubicacion:hover {
   background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
 }
-
-.ubicacion-menu {
-  background-color: white;
+.header-ubicacion-menu .titulo-ubicacion {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  text-transform: capitalize;
+}
+.header-ubicacion-menu .boton-menu {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-.barra-menu {
+.header-ubicacion-menu .barra-menu {
   background-color: rgb(117, 181, 142);
   border: 1px rgb(0, 0, 0) solid;
 }
-@media (max-width: 413px) {
-  .barra-menu {
+.header-ubicacion-menu .barra-menu:hover {
+  background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
+}
+@media (min-width: 413px) and (max-width: 400px) {
+  .header-ubicacion-menu .barra-menu {
     padding: 1.2rem;
     border-radius: 0;
   }
@@ -578,7 +579,7 @@ template {
   text-transform: capitalize;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .bar-titulo {
     font-size: 4rem;
   }
