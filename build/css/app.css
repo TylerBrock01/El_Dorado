@@ -379,7 +379,7 @@ template {
 }
 
 .header {
-  padding: 0.5rem;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 30% 70%;
   background-color: rgb(235, 215, 97);
