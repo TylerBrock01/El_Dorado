@@ -395,17 +395,18 @@ template {
 }
 
 .header-derecho {
+  padding-right: 1.5rem;
   display: grid;
+  font-size: 2rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .header-derecho {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 25%;
   }
 }
 @media (max-width: 768px) {
   .header-derecho {
     flex-direction: row;
-    font-size: 2rem;
   }
 }
 
@@ -416,20 +417,19 @@ template {
   text-transform: capitalize;
   color: rgb(215, 70, 63);
 }
-.header-contacto .contacto {
-  display: flex;
-  flex-direction: row;
-}
-.header-contacto .contacto .contacto-titulo {
+.header-contacto .contacto-titulo {
   margin: 0;
 }
-.header-contacto .contacto .numero {
+.header-contacto .contacto-numero-icon {
+  display: flex;
+}
+.header-contacto .numero {
   color: black;
 }
-.header-contacto .contacto .numero:hover {
+.header-contacto .numero:hover {
   color: green;
 }
-.header-contacto .contacto svg {
+.header-contacto svg {
   color: rgb(117, 181, 142);
 }
 
@@ -484,13 +484,11 @@ template {
 
 .ubicacion-menu {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 .barra-menu {
   background-color: rgb(117, 181, 142);
-  border-radius: 25%;
   border: 1px rgb(0, 0, 0) solid;
 }
 @media (max-width: 413px) {

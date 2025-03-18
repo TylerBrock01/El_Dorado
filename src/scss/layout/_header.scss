@@ -28,13 +28,16 @@
   //}
 }
 .header-derecho{
+  padding-right: 1.5rem;
   display: grid;
+  font-size: 2rem;
+  @include m.mini{
+    grid-template-rows: 25%% 40%;
+  }
   @include m.telefono{
-    grid-template-rows: repeat(3, 1fr);
   }
   @include m.tablet{
     flex-direction: row;
-    font-size: 2rem;
   }
 }
 .header-contacto{
@@ -43,34 +46,30 @@
   justify-content: end;
   text-transform: capitalize;
   color: c.$rojo;
-  .contacto{
+  .contacto-titulo{
+    margin: 0;
+  }
+  .contacto-numero-icon{
     display: flex;
-    flex-direction: row;
-  ;
-    @include m.desktop{
 
+  }
+  .numero{
+    color: black;
+    &:hover{
+      color: green;
     }
-    .contacto-titulo{
-      margin: 0;
-    }
-    .numero{
-      color: black;
-      &:hover{
-        color: green;
-      }
-    }
-    svg{
-      color: c.$verdegris;
-    }
-  //
+  }
+  svg{
+    color: c.$verdegris;
   }
 }
 .header-horario{
   display: flex;
   flex-direction: column;
   align-items: end;
-;
-  //gap: 0.5rem;
+  @include m.telefono{
+
+  }
   .horario{
     color: c.$negro;
     text-transform: capitalize;
@@ -124,19 +123,17 @@
 }
 .ubicacion-menu{
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   @include m.mini{
 
   }
 }
 .barra-menu{
   background-color: c.$verdegris ;
-  border-radius:25%;
   border: 1px c.$negro solid;
   @include m.mini{
-      padding: 1.2rem;
+    padding: 1.2rem;
     border-radius: 0;
   }
   }
