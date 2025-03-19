@@ -1,13 +1,23 @@
 const boton = document.getElementById("btnmenu");
 
 document.addEventListener('DOMContentLoaded', () => {
+    let toggle;
+
     boton.addEventListener("click", () => {
-        no_mostrar()
+        if(toggle == null || toggle === false){
+            mostrar_ordenes();
+            return toggle = true;
+        }
+        if(toggle){
+            no_mostrar()
+            return toggle = false;
+        }
     });
+
 })
 
 function mostrar_ordenes() {
-
+    console.log("mostrar");
     const overlay = document.getElementById("overlay")
     const div = document.createElement("DIV");
     div.className = "menu-nav contenedor";
