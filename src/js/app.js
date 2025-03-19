@@ -2,9 +2,10 @@ const boton = document.getElementById("btnmenu");
 
 document.addEventListener('DOMContentLoaded', () => {
     boton.addEventListener("click", () => {
-        mostrar_ordenes()
+        no_mostrar()
     });
 })
+
 function mostrar_ordenes() {
 
     const overlay = document.getElementById("overlay")
@@ -28,4 +29,9 @@ function mostrar_ordenes() {
         h4.textContent = service[i];
         a.appendChild(h4);
     }
+}
+function no_mostrar(){
+    console.log("no_mostrar");
+    const menu_nav = document.getElementById("menu-nav")
+    menu_nav.remove();
 }
