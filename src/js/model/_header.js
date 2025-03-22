@@ -1,6 +1,5 @@
 
 function incluirHeader(){
-
     document.getElementById("header").innerHTML =
         '<!--        imagen isotipo-->\n' +
         '        <img class="header-imagen" src="img/image1.png" alt="brand">\n' +
@@ -53,4 +52,8 @@ function incluirHeader(){
         '                </div>\n' +
         '            </div>\n' +
         '        </div>';
+    const script = document.createElement("script");
+    script.src = "src/js/Function/_crearMenuNav.js";
+    script.async = true;
+    document.body.appendChild(script);
 }
