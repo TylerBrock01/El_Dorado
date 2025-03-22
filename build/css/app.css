@@ -483,13 +483,16 @@ template {
 }
 .header-ubicacion-menu .boton-menu {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
 }
 .header-ubicacion-menu .barra-menu {
   background-color: rgb(117, 181, 142);
   border: 1px rgb(0, 0, 0) solid;
+  padding: 1rem;
 }
 .header-ubicacion-menu .barra-menu:hover {
+  background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
+}
+.header-ubicacion-menu .barra-menu .activo {
   background-color: rgb(83.2150943396, 155.1849056604, 111.3283018868);
 }
 @media (min-width: 413px) and (max-width: 400px) {

@@ -83,6 +83,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+
     border: 1px c.$negro solid;
     background-color: c.$verdegris;
     gap: 0.5rem;
@@ -102,17 +103,20 @@
   }
   .boton-menu{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    .boton-menu{
-
-    }
+    //grid-column: 1/2;
   }
   .barra-menu{
-    background-color: c.$verdegris ;
+    background-color: c.$verdegris;
     border: 1px c.$negro solid;
+    padding: 1rem;
+    @include m.telefono{
+    }
     &:hover{
       background-color: color.scale(c.$verdegris, $lightness: -20%);
-
+    }
+    //agregar con js
+    .activo{
+      background-color: color.scale(c.$verdegris, $lightness: -20%);
     }
     @include m.mini{
       padding: 1.2rem;
